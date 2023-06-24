@@ -7,11 +7,6 @@ import Provider from './Provider'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Marvel',
-  description: 'Page listing Marvel characters',
-}
-
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
 
   return (

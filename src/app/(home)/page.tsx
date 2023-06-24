@@ -7,9 +7,10 @@ import { useQuery } from 'react-query';
 import * as S from './style';
 
 
-const baseUrl = process.env.NEXT_PUBLIC_MARVEL_API_URL;
-const publicKey = process.env.NEXT_PUBLIC_MARVEL_API_KEY;
-const privateKey = process.env.NEXT_PUBLIC_MARVEL_API_KEY_PRIVATE;
+
+const baseUrl = 'http://gateway.marvel.com/v1/public/';
+const publicKey = '11e730caac62943efc9f1d79cc3dbb3c';
+const privateKey = 'b00204dc009935a02c974be0a04e6477c3fba9d5'
 
 let time = Number(new Date());
 const hash = md5(time + privateKey + publicKey);
